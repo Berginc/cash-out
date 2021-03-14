@@ -7,7 +7,7 @@
     <title>Cash Out</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="Cash Out V1.css"> -->
+    <link rel="stylesheet" href="Cash Out V1.css">
 
 </head>
 
@@ -20,12 +20,11 @@
 
         </header>
 
-        <h3 class="py-3">
+        <h3 class="py-3 container-fluid">
             Cash Out Calculator
         </h3>
 
-        <div class="d-grid gap-3">
-
+        <div class="d-grid gap-3 form-group">
 
             <form>
                 <label class="px-3""> What are the odds right now? </label>
@@ -47,29 +46,26 @@
 
         </div>
 
-        <div class="d-grid gap-2 col-6 mx-auto pt-4">
+        <div class="d-grid gap-2 col-6 mx-auto pt-4 container-fluid">
             <button id="btn" type="button" class="btn btn-primary">Calculate Cash Out</button>
         </div>  
 
         <br> 
 
-         <input class="d-grid gap-2 col-6 mx-auto pt-4" id="result">
+                 <input readonly class="form-control-plaintext" class=" d-grid gap-2 col-6 container-fluid" id="result"> 
+
+                 <br> 
+
+                 <input readonly class="form-control-plaintext" class=" d-grid gap-2 col-6 container-fluid" id="hedge">
 
     </div>
-
-
         <br>
 
         <footer>
 
         </footer>
 
-        <script src="cash-out.js">
-
-
-        </script>
-
-        </script>
+        <script src="cash-out.js">  </script>
 
     </body>
 
