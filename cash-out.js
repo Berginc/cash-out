@@ -4,9 +4,11 @@
 // Cash Out Function
 function cashOutValue(currentOdds, originalOdds, stake) {
   const cashOut = (originalOdds * stake) / currentOdds;
-  const cashOutSummary = `Your cash out should be €${cashOut} from your €${stake} stake. So if you lay €${cashOut} (Liability of €${
+  const cashOutSummary = `Your cash out is €${cashOut}, from your stake of €${stake}. If you lay €${cashOut} on a Betting Exchange, you'll lock in €${
+    cashOut - stake
+  } profit. Note: You'll need a balance of €${
     currentOdds * cashOut
-  }) on a Betting Exchange, you'll lock in €${cashOut - stake} profit`;
+  } to lay this bet`;
   return cashOutSummary;
 }
 
