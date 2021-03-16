@@ -35,26 +35,36 @@
             Cash Out Calculator
         </h3>
 
-        <div class="d-grid gap-4">
+        
 
-            <form>
-                <label class="px-3"> What are the odds right now? </label>
-                <input id="oddsNow" placeholder="Odds" class="float-end">
-            </form>
+        <div class="px-3 form-group row"> 
 
-
-            <form>
-                <label class="px-3"> What odds did you place your bet at? </label>  
-                <input id="oddsPlaced" placeholder="Odds" class="float-end">
-
+            <form>  
+                <label class="pb-2"> What are the odds right now? </label> 
+                <div class="col-3">
+                <input class="mb-3 form-control input-lg" id="oddsNow" placeholder="2/1"> 
+                </div> 
             </form>
 
             <form>
-                <label class="px-3"> How much did you stake? </label>
-                <input id="stake" placeholder="Stake" class="float-end">
+                <label class="pb-2"> What odds did you place your bet at? </label>  
+                <div class="col-3">
+                <input class="mb-3 form-control input-lg" id="oddsPlaced" placeholder="2/1">
+               </div> 
+
+            </form>
+
+            <form>
+                <label class="pb-2"> How much did you stake? </label>
+                <div class="col-3">
+                <input class="mb-3 form-control input-lg" id="stake" placeholder="€10">
+            </div> 
+
             </form>
 
         </div>
+
+
 
         <div class="d-grid gap-2 col-6 mx-auto pt-4 container-fluid">
             <button id="btn" type="button" class="btn btn-primary">Calculate Cash Out</button>
