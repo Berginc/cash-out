@@ -27,9 +27,17 @@ function cashOutValue(currentOdds, originalOdds, stake) {
     originalOdds = getDecimalPrice(originalOdds);
   }
 
-  const cashOut = (originalOdds * stake) / currentOdds;
+  let cashOut = (originalOdds * stake) / currentOdds;
   const hedge = cashOut - stake;
   const liability = currentOdds * cashOut;
-  const cashOutSummary = `Your cash out is €${cashOut}, from your stake of €${stake}. If you lay €${cashOut} on a Betting Exchange, you'll lock in €${hedge} profit. Note: You'll need a balance of €${liability} to lay this bet`;
+  const cashOutSummary = `Your cash out is €${cashOut.toFixed(
+    2
+  )}, from your stake of €${stake}. If you lay €${cashOut.toFixed(
+    2
+  )} on a Betting Exchange, you'll lock in €${hedge.toFixed(
+    2
+  )} profit. Note: You'll need a balance of €${liability.toFixed(
+    2
+  )} to lay this bet`;
   return cashOutSummary;
 }
